@@ -1,0 +1,193 @@
+html,
+body {
+  position: relative;
+  height: 100%;
+  background: #333;
+}
+
+#wrapper {
+  position: relative;
+  height: 100%;  
+}
+header{
+	background: #333;
+}
+
+aside {
+  width: 15rem;
+  height: 100%;
+  float: left; 
+  padding: 0.5rem;
+  background: #FFFFFF;  
+}
+
+main {
+  position: relative;
+  width: calc(100% - 18rem);
+  height: calc(100% - 5em);
+  float: right;
+  margin: 0;
+  margin-bottom: 1em;
+  padding: 0.5rem;
+  background: #fdfdfd;  
+}
+
+.menu  label{
+  display:block;  
+}
+
+.menu ul{  
+  visibility: hidden; 
+  display: none;
+  list-style-type: none;
+ 
+}
+
+.menu  li a{
+	color: #000;
+	text-decoration: none;
+}
+#tm:checked ~ .hiddentext{
+  display: block;
+  visibility: visible;
+ 
+}
+
+input#tm{
+  display: none;
+  position: relative;
+}
+#tn:checked ~ .hiddentext{
+  display: block;
+  visibility: visible;
+ 
+}
+
+input#tn{
+  display: none;
+  position: relative;
+}
+#tp:checked ~ .hiddentext{
+  display: block;
+  visibility: visible;
+ 
+}
+
+input#tp{
+  display: none;
+  position: relative;
+}
+
+#field {
+	margin: 0;
+    padding: 0;
+	display: none;	
+}
+
+#myCanvas{
+	z-index:1;
+	position:absolute;
+	left: 20px;
+    top: 20px; 
+	background-color:white;
+	background-image: linear-gradient(black 2px, transparent 2px),
+						linear-gradient(90deg, black 2px, transparent 2px),
+						linear-gradient(rgba(0,0,0,.3) 1px, transparent 1px),
+						linear-gradient(90deg, rgba(0,0,0,.3) 1px, transparent 1px);
+	background-size:100px 100px, 100px 100px, 20px 20px, 20px 20px;
+	background-position:-1px -1px, -1px -1px, -1px -1px, -1px -1px;
+}
+
+#dataSim input, #dataSim  label{
+	z-index:2;
+	position: relative;
+	font: italic 12pt Calibri;
+	text-align:  center;	
+}
+
+#dataSim label {
+	top:315px;
+	left:-55px; 
+}
+
+#ButtonSim{
+	top:375px;
+	left:25px;	
+}
+
+#SimTime {
+	top:340px;
+	left:-135px;
+	width: 83px;
+}
+#dataT{	
+	z-index:3;
+	position: relative;
+	font: italic 12pt Calibri;
+	text-align:  center;
+	border: 1px solid #000000;
+	width: 120px;
+	height: 100px;
+	background-color: #FFFFFF;
+	display: none;
+}
+#dataT input{
+width: 50px;
+ margin: 4%;
+}
+
+#dataB{	
+	z-index:3;
+	position: relative;
+	font: italic 12pt Calibri;
+	text-align:  center;
+	border: 1px solid #000000;
+	width: 100px;
+	height: 60px;
+	background-color: #FFFFFF;
+	display: none;
+	
+}
+#dataB input{
+width: 50px;
+ margin: 3%;
+}
+
+#graph1 {
+	z-index:4;
+	position: relative;
+	width: 498px;
+	height: 298px;
+	background-color: #FFFFFF;
+	border: 1px solid #000000;
+	top:285px;
+	left:12px;
+	
+
+}
+#graph2 {
+	z-index:4;
+	position: relative;
+	width: 498px;
+	height: 298px;
+	background-color: #FFFFFF;
+	border: 1px solid #000000;
+	top:-15px;
+	left:512px;
+}
+ #table1{
+	z-index:4;
+	position: relative; 
+	top:-15px;
+	left:1013px;
+	height: 100px;
+ }
+ table {
+    height: 100px;
+	 border-collapse: collapse;
+	border: 1px solid #000000;
+   }
+   td, th {
+    border: 1px solid #000000;
+    padding: 5px; /* Поля вокруг текста */
+   }
