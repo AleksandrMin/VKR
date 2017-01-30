@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<HTML>
+    <HEAD>
+      <TITLE>SIMULATION</TITLE>	
+	  <script type="text/javascript" src="sim.js"></script>
+	  <script type="text/javascript" src="jscharts.js"></script>	  
+	  <LINK rel="stylesheet" href="main.css" type="text/css" />
+	  <META charset="utf-8">	  
+    </HEAD>
+    <BODY>
+		<div id="wrapper">
+			<header>
+				<H1>Manufacture Simulator</H1>
+			</header>
+			<aside>
+			<nav>		
+					<div class="menu">
+						<label for="tm" ><h2>Модель 1</h2></label>
+						<input type="checkbox" id="tm"/></a>
+							<ul class="hiddentext">
+								<li>
+									<a href="#" Onclick="show()">пример 1</a>
+       
+								</li>
+								<li>
+									пример 2
+								</li>								
+							</ul>
+						</div>	
+						<div class="menu">	
+						<label for="tn" ><h2>Модель 2</h2></label>
+						<input type="checkbox" id="tn"/></a>
+							<ul class="hiddentext">
+								<li>
+									пример 1
+								</li>
+								<li>
+									пример 2
+								</li>								
+							</ul>
+							</div>														
+			</nav>
+			</aside>
+			<main>	
+			
+				<div id="field">				
+					<canvas id="myCanvas" width="1000" height="700" ></canvas>
+					<div id="dataSim">
+						<input type="button" id="ButtonSim" value="Simulation" onclick="simulation()" >
+						<label for="time">SimTime:</label>
+						<input type="text" name="time" id="SimTime" value="100">						
+					</div>	
+					<div id="table1"></div>
+					<div id="graph1"></div>
+					<div id="graph2"></div>					
+					<div id="dataT">
+						<label for="Tminrange">Tmin:</label>
+						<input type="text" name="Tminrange" id="Tmin" value="5">
+						<label for="Tminrange">Tmax:</label>
+						<input type="text" name="Tmaxrange" id="Tmax" value="30">
+						<input type="button" id="ButtApply" value="Apply" onclick="applymean()" >
+					</div>
+					<div id="dataB">
+						<label for="Buffrange">Buff:</label>
+						<input type="text" name="Buffrange" id="Buff" value="5">						
+						<input type="button" id="ButtApply" value="Apply" onclick="applybuff()" >
+					</div>
+					
+				</div>
+				
+				 <script type="text/javascript" src="des.js" ></script>
+			</main>
+		</div>
+    </BODY>
+</HTML>
+
